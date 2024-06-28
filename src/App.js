@@ -8,12 +8,16 @@ import Dashboard from './components/Dashboard/Dashboard';
 import Footer from './components/Footer.js/Footer';
 import ACInstallationForm from './components/Forms/ACInstallationForm';
 import ACInstallationDetails from './components/Dashboard/ACInstallationDeatails';
+import Sidebar from './components/Dashboard/Sidebar';
 
 function App() {
   return (
     <>
       <BrowserRouter>
-      <Navbar/>
+      <div className="flex">
+        <Sidebar />
+        <div className="flex-grow  md:ml-64">
+      {/* <Navbar/> */}
         <Routes>
          <Route path="/" element={<Home />} />
          <Route path="/about" element={<About />} />
@@ -21,10 +25,12 @@ function App() {
          <Route path='/login'  element={<Login/>}/>
          <Route path="/dashboard" element={<Dashboard/>} />
          {/* <Route path="/contact" element={<Contact />} /> */}
-         <Route path='/regiter-installation' element={<ACInstallationForm /> }/>
+         <Route path='/register-installation' element={<ACInstallationForm /> }/>
          <Route path='/installation-details' element={<ACInstallationDetails />} />
         </Routes>
         <Footer />
+        </div>
+        </div>
       </BrowserRouter>
     </>
   );

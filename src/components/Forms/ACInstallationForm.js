@@ -107,14 +107,13 @@ const ACInstallationForm = ({ onSubmit }) => {
   };
 
   return (
-    <div className="min-h-screen p-6">
-      <h2 className='text-center text-4xl mb-4'>Registration Form</h2>
-      <hr className='mb-5'/>
-      <form className=" rounded-lg p-8 max-w-7xl mx-auto">
+    <div className="min-h-screen  p-6">
+      <h2 className="text-center text-4xl mb-4 font-bold text-navy">Registration Form</h2>
+      <hr className="mb-5"/>
+      <form className="bg-white rounded-lg p-8 max-w-7xl mx-auto  " onSubmit={handleSubmit}>
         {/* Customer Information */}
         <h2 className="text-2xl font-semibold mb-2 text-navy">Customer Information</h2>
-        <hr className='mb-5'/>
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
           <div className="mb-4">
             <label className="block text-navy text-sm font-bold mb-2" htmlFor="customerName">Customer Name</label>
             <input
@@ -166,8 +165,8 @@ const ACInstallationForm = ({ onSubmit }) => {
         </div>
 
         {/* AC Unit Information */}
-        <h2 className="text-2xl font-semibold mb-4 mt-8 text-navy">AC Unit Information</h2>
-        <div className="grid grid-cols-2 gap-4">
+        <h2 className="text-2xl font-semibold mb-4 text-navy">AC Unit Information</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
           <div className="mb-4">
             <label className="block text-navy text-sm font-bold mb-2" htmlFor="acBrand">Brand</label>
             <input
@@ -231,8 +230,8 @@ const ACInstallationForm = ({ onSubmit }) => {
         </div>
 
         {/* Installation Details */}
-        <h2 className="text-2xl font-semibold mb-4 mt-8 text-navy">Installation Details</h2>
-        <div className="grid grid-cols-2 gap-4">
+        <h2 className="text-2xl font-semibold mb-4 text-navy">Installation Details</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
           <div className="mb-4">
             <label className="block text-navy text-sm font-bold mb-2" htmlFor="installationDate">Installation Date</label>
             <input
@@ -272,8 +271,8 @@ const ACInstallationForm = ({ onSubmit }) => {
         </div>
 
         {/* Service Information */}
-        <h2 className="text-2xl font-semibold mb-4 mt-8 text-navy">Service Information</h2>
-        <div className="grid grid-cols-2 gap-4">
+        <h2 className="text-2xl font-semibold mb-4 text-navy">Service Information</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
           <div className="mb-4">
             <label className="block text-navy text-sm font-bold mb-2" htmlFor="warrantyPeriod">Warranty Period</label>
             <input
@@ -314,8 +313,8 @@ const ACInstallationForm = ({ onSubmit }) => {
         </div>
 
         {/* Additional Information */}
-        <h2 className="text-2xl font-semibold mb-4 mt-8 text-navy">Additional Information</h2>
-        <div className="grid grid-cols-2 gap-4">
+        <h2 className="text-2xl font-semibold mb-4 text-navy">Additional Information</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
           <div className="mb-4">
             <label className="block text-navy text-sm font-bold mb-2" htmlFor="purchaseDate">Purchase Date</label>
             <input
@@ -343,10 +342,10 @@ const ACInstallationForm = ({ onSubmit }) => {
         </div>
 
         {/* Submit Button */}
-        <div className=" mt-6">
+        <div className="mt-6">
           <button
             type="submit"
-            className="w-full bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300  text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            className="w-full bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
           >
             Register
           </button>
